@@ -1,0 +1,35 @@
+section{
+    display: flex;
+    justify-content: space-around;
+    background: burlywood;
+    height: 100vh;
+    color: purple;
+    border: 2px solid blue;
+}
+.left{
+    /* width: 10%; */
+    padding-top: 10vh;
+}
+img:hover{
+    box-shadow: 10px 4px 10px chocolate;
+}
+.right{
+    padding-top: 12vh;
+}
+img{
+    width: 40vw;
+    height: 80vh;
+}
+#cart,#buy{
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+#cart:hover{
+    box-shadow: 5px 5px 5px tomato;
+}
+#buy:hover{
+    box-shadow: 5px 5px 5px lime;
+}
+#buy{
+    margin-left: 1vw;
+}

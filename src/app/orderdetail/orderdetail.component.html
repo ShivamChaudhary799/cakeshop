@@ -1,0 +1,23 @@
+<div class="containers">
+<form action="">
+<h2 class="pt-5 mb-5">Billing Details</h2>
+<div class="mb-3 col-5">
+    <input [(ngModel)] = "personal.name" type="text" name="name" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="mb-3 col-5">
+    <input [(ngModel)] = "personal.address" type="text" name="address" class="form-control" placeholder="Address" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="mb-3 col-5">
+    <input [(ngModel)] = "personal.phone" type="text" name="phone" class="form-control" placeholder="Mobile Number" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="mb-3 col-5">
+    <input [(ngModel)] = "personal.city" type="text" name="city" class="form-control" placeholder="City" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="mb-3 col-5">
+    <input [(ngModel)] = "personal.pincode" type="text" name="pincode" class="form-control" placeholder="Pincode" aria-label="Username" aria-describedby="basic-addon1">
+</div>
+<div class="mb-3 col-5">
+    <button class="btn btn-primary"  (click) = "checkout()">Submit</button>
+</div>
+</form>
+</div>

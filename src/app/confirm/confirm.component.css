@@ -1,0 +1,12 @@
+.containers{
+    position: relative;
+    left: 15vw;
+    top: 10vh;
+    width: 50vw;
+    background-color: rgba(0, 0, 255, 0.452);
+}
+p{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 15vw;
+}

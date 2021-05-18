@@ -1,0 +1,10 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{{image[0]}}" class="d-block w-100" alt="...">
+      </div>
+      <div *ngFor = "let slide of image.slice(1)" class="carousel-item">
+        <img src="{{slide}}" class="d-block w-100" alt="images">
+      </div>
+    </div>
+</div>

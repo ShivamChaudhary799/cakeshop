@@ -1,0 +1,20 @@
+<div class="containers">
+<form action="">
+  <h3>Please Login</h3>
+  <div class="mb-3 col-4">
+    <input [(ngModel)] = "user.email" type="text" class="form-control" placeholder="Enter your Email Address" name="email" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="mb-3 col-4">
+    <input [(ngModel)] = "user.password" type="password" class="form-control" placeholder="Enter your Password" name="password" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+  <button (click) = "login()" class="btn btn-primary" id="login">Login</button>
+  <p class="mt-3" id="signup">Create an account?<a routerLink = "/signup">Signup</a></p>
+  <p id="forgot">Forget Password?<a routerLink = "/forgot">Forgot Password</a></p>
+</form>
+</div>
+
+<ngx-spinner
+  bdColor="rgba(0, 0, 0, 1)"
+  template="<img src='https://media.giphy.com/media/o8igknyuKs6aY/giphy.gif' />"
+>
+</ngx-spinner>

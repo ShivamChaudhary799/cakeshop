@@ -1,0 +1,45 @@
+<div class="containers">
+<div class="table">
+  <h2 id="title">My Orders</h2>
+  <div class="table-heading">
+    <th scope="col">#</th>
+    <th scope="col">Order Id</th>
+    <th scope="col">Order Date</th>
+    <th scope="col">Name</th>
+    <th scope="col">Price</th>
+    <th scope="col">Mode</th>
+  </div>
+
+
+<div *ngFor = "let detail of orderdetail; let i = index">
+  <div class="table-record" (click) = "buydetail(i)">
+    <td scope="row">{{ i + 1 }}</td>
+    <td>{{detail.orderid}}</td>
+    <td>{{detail.orderdate}}</td>
+    <td>{{detail.name}}</td>
+    <td>Rs.{{detail.price}}/-</td>
+    <td>{{detail.mode}}</td>
+</div>
+
+
+<div class=" orderdata hidden" id="buy{{i}}">
+  <h4>Order Details</h4>
+  <div class="contain" *ngFor= "let buyitem of detail.cakes" >
+    <div id="buydata">
+      <div class="image">
+        <img src="{{buyitem.image}}" alt="">
+      </div>
+      <div class="data">
+      <li>Cake-Name: {{buyitem.name}}</li>
+      <li>Quantity: {{buyitem.quantity}}</li>
+      <li>Price: {{buyitem.price}}</li>
+      <li>Weight: {{buyitem.weight}} Kg</li>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<router-outlet></router-outlet>

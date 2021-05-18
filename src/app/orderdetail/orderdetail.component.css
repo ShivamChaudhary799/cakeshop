@@ -1,0 +1,17 @@
+h2 {
+    text-align: center;
+}
+input {
+    margin-left: 15vw;
+}
+button {
+    margin-left: 22vw;
+    margin-bottom: 3vh;
+}
+form{
+    position: relative;
+    background-color: rgba(255, 192, 203, 0.678);
+    width: 50vw;
+    left: 30%;
+    top: 5vh;
+}

@@ -1,0 +1,12 @@
+.size{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+}
+.card{
+    height: 50vh;
+}
+.card .card-img-top{
+    height: 50%;
+    
+}

@@ -1,0 +1,33 @@
+
+  <button id="checkout" routerLink = "/checkout"  class="btn btn-success" type="button">Checkout</button>
+  <button id="admin" routerLink = "/admin"  class="btn btn-success" type="button">Admin panel</button>
+  <h2 id="title">Your Cart</h2>
+  <table class="table table-hover">
+    <thead>
+        <tr>
+          <th scope="col">#</th>
+          <th scope="col">Cake</th>
+          <th scope="col">Cake Name</th>
+          <th scope="col">Price</th>
+          <th scope="col">Weight</th>
+          <th scope="col">Remove</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor = "let item of detail; let i = index">
+          <td scope="row">{{ i + 1 }}</td>
+          <td scope="col"><img id="cakeimg" src="{{item.image}}" alt=""></td>
+          <td>{{item.name}}</td>
+          <td>Rs.{{item.price}}/-</td>
+          <td>{{item.weight}} kg</td>
+          <td><i (click) = "remove(item.cakeid)" class="fa fa-trash"></i></td>
+        </tr>
+</table>
+
+<li *ngIf="detail?.length == 0">
+  <span class="search_no_results">
+     <img id="norecord" src="/assets/no-record-found.png" alt="" srcset="">
+  </span>
+</li>
+
+<ngx-spinner></ngx-spinner>

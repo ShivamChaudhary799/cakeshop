@@ -1,0 +1,32 @@
+img{
+    width: 30px;
+    height: 30px;
+}
+.table h2{
+    padding-bottom: 2vh;
+    margin-left: 25vw;
+}
+.table .table-heading, .table-record{
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr 2fr 2fr;
+    padding-left: 5vw;
+}
+.containers{
+    background: url('/assets/background.jpg');
+    height: 200vh;
+    
+}
+.table{
+    background: rgba(255, 192, 203, 0.678);
+    position:relative;
+    width: 70%;
+    height: auto;
+    left: 15%;
+    top: 10vh;
+}
+.table-record:hover{
+    color: rgba(128, 128, 128, 0.753);
+}
+button{
+   margin-left: 15vw;
+}

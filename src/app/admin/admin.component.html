@@ -1,0 +1,21 @@
+<div class="containers">
+  <div class="table">
+    <h2 id="title">Admin Panel <button routerLink= "/admin/addcakes" class="btn btn-secondary">Add Cake</button></h2>
+    <div class="table-heading">
+      <th scope="col">#</th>
+      <th scope="col">Cake</th>
+      <th scope="col">Cake Name</th>
+      <th scope="col">Price</th>
+      <th scope="col">Edit</th>
+    </div>
+  
+  
+  <div *ngFor = "let item of data; let i = index">
+    <div class="table-record">
+      <td scope="row">{{ i + 1 }}</td>
+      <td scope="col"><img id="cakeimg" src="{{item.image}}" alt=""></td>
+      <td>{{item.name}}</td>
+      <td>Rs.{{item.price}}/-</td>
+      <td><i (click) = "edit(item.cakeid)" class="fa fa-edit"></i></td>
+  </div>
+  </div>

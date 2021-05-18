@@ -1,0 +1,28 @@
+h3{
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+}
+.containers{
+    background: url('/assets/back.jpg') no-repeat;
+    min-width: 100vw;
+    min-height: 100vh;
+}
+form{
+    position: relative;
+    background-color: rgba(188, 143, 143, 0.561);
+    width: 30%;
+    left: 35%;
+    top: 5vh;
+}
+input{
+    width: 20vw;
+    margin-left: 5vw;
+}
+button{
+    margin-left: 12vw;
+}
+#signup{
+    margin-left: 12vw;
+    margin-bottom: 4vh;
+}

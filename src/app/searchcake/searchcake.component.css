@@ -1,0 +1,18 @@
+h3{
+    text-align: center;
+}
+.cakes{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2em;
+    justify-content: space-around;
+}
+#cakes{
+    background: url('/assets/background.jpg');
+    min-width: 100vw;
+    min-height: 100vh;
+}
+#size{
+    width: 60vw;
+    margin-left: 20vw;
+}

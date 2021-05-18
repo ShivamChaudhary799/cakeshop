@@ -1,0 +1,30 @@
+.table{
+    background: url('/assets/background.jpg');
+}
+#cakeimg{
+    width: 5vw;
+    height: 5vw;
+}
+li{
+    list-style: none;
+}
+#norecord{
+    width: 30vw;
+    height: 30vh;
+    margin-left: 35vw;
+    margin-top: 20vh;
+}
+#checkout{
+    margin-left: 80vw;
+    margin-top: 2vh;
+}
+#admin{
+    margin-left: 2vw;
+    margin-top: 2vh;
+}
+#title{
+    padding-left: 45vw;
+    color: brown;
+    background-color: burlywood;
+    margin-top: 3vh;
+}

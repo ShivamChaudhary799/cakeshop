@@ -1,0 +1,42 @@
+<div class="containers">
+    <form action="">
+    <h3>Edit Details</h3>
+    <div id="detail" class="mb-3">
+        <label for="name">Name
+        <input [(ngModel)] = "editdata.name" value="{{editdata.name}}"  type="text" class="form-control" placeholder="Enter Cake Name" name="name"  aria-describedby="addon-wrapping">
+    </label>
+        <label for="name">Price   
+        <input [(ngModel)] = "editdata.price" value="{{editdata.price}}" type="text" class="form-control" placeholder="Enter Cake Price" name="price"  aria-describedby="addon-wrapping">
+    </label>
+    </div>
+    <select name="type" [(ngModel)] = "editdata.type" aria-label="Default select example" class="mb-3" id="type">
+        <option value="1">Eggless</option>
+        <option value="2">Eggish</option>
+      </select>
+    <div id="detail" class="mb-3">
+        <label for="name">Weight
+        <input [(ngModel)] = "editdata.weight" value="{{editdata.weight}}" type="text" class="form-control" placeholder="Enter Cake Weight" name="weight"  aria-describedby="addon-wrapping">
+    </label>
+        <label for="name">Flavour
+        <input [(ngModel)] = "editdata.flavour" value="{{editdata.flavour}}" type="text" class="form-control" placeholder="Enter Cake Flavour" name="flavour"  aria-describedby="addon-wrapping">
+    </label>
+    </div>
+    <div id="detail" class="mb-3">
+        <label for="name">Ingredients
+        <input [(ngModel)] = "editdata.ingredients" value="{{editdata.ingredients}}" type="text" class="form-control" placeholder="Enter Ingredients" name="ingredients"  aria-describedby="addon-wrapping">
+    </label>
+        <label for="name">Description
+        <textarea [(ngModel)] = "editdata.description" value="{{editdata.description}}" type="text" class="form-control" placeholder="Enter Cake Description" name="description"  aria-describedby="addon-wrapping"></textarea>
+    </label>
+    </div>
+    <div id="image">
+        <label for="name">Image
+        <input (change) = "submit($event)" type="file">
+    </label>
+    </div>
+    <div id="photo">
+        <img [src] ="editdata.image" alt="" srcset="">
+    </div>
+      <button (click) = "update()" class="btn btn-primary" id="edit">Save Changes</button>
+    </form>
+    </div>

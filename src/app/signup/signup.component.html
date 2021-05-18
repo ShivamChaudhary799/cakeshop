@@ -1,0 +1,15 @@
+<div class="containers">
+<form>
+    <h3>SignUp</h3>
+<div class="mb-3 col-4">
+    <input [(ngModel)] = "users.name" type="text" class="form-control" placeholder="Enter your name" name="name" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="mb-3 col-4">
+    <input [(ngModel)] = "users.email" type="email" class="form-control" placeholder="Enter your Email" name="email" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<div class="mb-3 col-4">
+    <input [(ngModel)] = "users.password" type="password" class="form-control" placeholder="Enter your Pasword" name="password" aria-label="Username" aria-describedby="addon-wrapping">
+</div>
+<button (click) = "register()" id="signup" class="btn btn-success">Signup</button>
+</form>
+</div>

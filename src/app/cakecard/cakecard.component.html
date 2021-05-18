@@ -1,0 +1,15 @@
+<div (click) = "getdata(cakes.cakeid)" appZoomhover class="card" style="width: 18rem;">  
+  <img *ngIf="!cakes.eggless" class="size" src="/assets/veg.png" alt="">
+  <img *ngIf="cakes.eggless" class="size" src="/assets/nonveg.png" alt="">
+  <img src="{{cakes.image}}" class="card-img-top" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">{{cakes.name}}</h5>
+      <p class="card-text">{{cakes.Type}}</p>
+      <p class="card-text">Rs.{{cakes.price}}/-</p>
+    </div>
+  </div>
+
+
+
+
+
