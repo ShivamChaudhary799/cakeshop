@@ -12,7 +12,6 @@ img{
     padding-left: 5vw;
 }
 .containers{
-    background: url('/assets/background.jpg');
     height: 200vh;
     
 }
@@ -23,6 +22,8 @@ img{
     height: auto;
     left: 15%;
     top: 10vh;
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
 .table-record:hover{
     color: rgba(128, 128, 128, 0.753);

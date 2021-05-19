@@ -1,5 +1,5 @@
 .containers{
-    background: url('/assets/back.jpg') no-repeat;
+    /* background: url('/assets/back.jpg') no-repeat; */
     min-width: 100vw;
     min-height: 130vh;
 }
@@ -12,8 +12,10 @@ form{
 }
 h3{
     text-align: center;
-    padding-top: 10vh;
+    padding-top: 1vh;
     padding-bottom: 5vh;
+    color: brown;
+    background-color: burlywood;
 }
 input,textarea,select{
     width: 20vw;

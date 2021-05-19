@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { NgxSpinnerService } from 'ngx-spinner';
 import { CommonService } from '../common.service';
 
 @Component({
@@ -8,8 +9,12 @@ import { CommonService } from '../common.service';
 })
 export class HomeComponent implements OnInit {
 addcard:any = [];
-  constructor(public cs: CommonService) { 
-  // this.addcard = this.cs.data;
+  constructor(public cs: CommonService,
+    private spinner: NgxSpinnerService) { 
+      this.spinner.show();
+      setTimeout(() => {
+        this.spinner.hide();
+      }, 3000);
   }
   ngOnInit(): void {
   }

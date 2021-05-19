@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./addcake.component.css']
 })
 export class AddcakeComponent implements OnInit {
-addcake: any = {};
+addcake: any = {categories: "",type : ""};
   constructor(private client: HttpClient) { }
 
 

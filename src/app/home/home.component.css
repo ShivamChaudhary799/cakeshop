@@ -9,8 +9,10 @@ h3{
     grid-template-columns: repeat(4,1fr);
     gap: 2em; 
 }
-#cakes{
-    background: url('/assets/background.jpg');
+h2{
+    font-size: 90px;
+    margin-left: 12vw;
 }
+
 
 

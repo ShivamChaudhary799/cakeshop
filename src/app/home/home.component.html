@@ -1,10 +1,15 @@
 <app-carousal></app-carousal>
 <!-- <app-search></app-search> -->
 <div id="cakes">
-<h3>SHOP</h3>
 <div class="cakes">
-<app-cakecard [cakes] = "items" *ngFor = "let items of cs.data">
+<app-cakecard [cakes] = "items" *ngFor = "let items of cs.data" class="mt-4">
 
 </app-cakecard>
 </div>
 </div>
+
+<ngx-spinner>
+    <h2>🎂</h2>
+    <h1>Welcome To CakeShop</h1>
+    <h3>Shivam Chaudhary</h3>
+</ngx-spinner>

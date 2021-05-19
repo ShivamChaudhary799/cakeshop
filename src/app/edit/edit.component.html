@@ -9,10 +9,14 @@
         <input [(ngModel)] = "editdata.price" value="{{editdata.price}}" type="text" class="form-control" placeholder="Enter Cake Price" name="price"  aria-describedby="addon-wrapping">
     </label>
     </div>
-    <select name="type" [(ngModel)] = "editdata.type" aria-label="Default select example" class="mb-3" id="type">
-        <option value="1">Eggless</option>
-        <option value="2">Eggish</option>
-      </select>
+    <div id="detail" class="mb-3">
+        <label for="name">Categories
+        <input [(ngModel)] = "editdata.categories" value="{{editdata.categories}}"  type="text" class="form-control" placeholder="Enter Cake categories" name="categories"  aria-describedby="addon-wrapping">
+    </label>
+        <label for="name">Type   
+        <input [(ngModel)] = "editdata.type" value="{{editdata.type}}" type="text" class="form-control" placeholder="Enter Cake type" name="type"  aria-describedby="addon-wrapping">
+    </label>
+    </div>
     <div id="detail" class="mb-3">
         <label for="name">Weight
         <input [(ngModel)] = "editdata.weight" value="{{editdata.weight}}" type="text" class="form-control" placeholder="Enter Cake Weight" name="weight"  aria-describedby="addon-wrapping">

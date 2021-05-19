@@ -3,7 +3,6 @@ h3{
     padding-top: 10vh;
 }
 .containers{
-    background: url('/assets/back.jpg') no-repeat;
     min-width: 100vw;
     min-height: 100vh;
 }
@@ -12,7 +11,9 @@ form{
     background-color: rgba(188, 143, 143, 0.561);
     width: 30%;
     left: 35%;
-    top: 5vh;
+    top: 7vh;
+    border-radius: 5px;
+    border: 2px solid #000000;
 }
 input{
     width: 20vw;
@@ -20,6 +21,9 @@ input{
 }
 button{
     margin-left: 12vw;
+    background-color: burlywood;
+    border-radius: 5px;
+    border: 2px solid #000000;
 }
 #signup{
     margin-left: 5vw;

@@ -11,7 +11,7 @@ export class ZoomhoverDirective {
 
    @HostListener('mouseenter') out(){
     this.htmlelement.style.transform = "scale(1.1)";
-    this.htmlelement.style.boxShadow = "5px 10px 10px blue";
+    this.htmlelement.style.boxShadow = "5px 10px 10px pink";
   }
   @HostListener('mouseleave') in(){
     this.htmlelement.style.transform = "scale(1)";

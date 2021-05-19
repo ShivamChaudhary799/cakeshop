@@ -9,18 +9,20 @@
         <input [(ngModel)] = "addcake.price"  type="text" class="form-control" placeholder="Enter Cake Price" name="price"  aria-describedby="addon-wrapping">
     </label>
     </div>
-    <select name="categories" [(ngModel)] = "addcake.categories" placeholder="Choose Categories" aria-label="Default select example" class="mb-3" id="categories">
-        <option value="" disabled selected>Choose a categories</option>
-        <option [ngValue] = "'eggless'" value="1">Eggless</option>
-        <option [ngValue] = "'eggish'" value="2">Eggish</option>
-    </select>
-    <select name="type" [(ngModel)] = "addcake.type" aria-label="Default select example" class="mb-3" id="type">
-        <option value="" disabled selected>Choose a Cake-Type</option>
-        <option [ngValue] = "'birthday'" value="1">Birthday Cake</option>
-        <option [ngValue] = "'wedding'" value="2">Wedding Cake</option>
-        <option [ngValue] = "'anniversary'" value="2">Anniversary Cake</option>
-        <option [ngValue] = "'lockdown'" value="2">Lockdown Cake</option>
-      </select>
+    <div id="detail" class="mb-3">
+        <select [(ngModel)] = "addcake.categories" value="{{addcake.categories}}"  type="text" class="form-control" placeholder="Enter Cake categories" name="categories"  aria-describedby="addon-wrapping">
+            <option value="" disabled selected>Choose a Cake-Categories</option>
+            <option [ngValue] = "'birthday'" value="1">Eggless</option>
+            <option [ngValue] = "'wedding'" value="2">Eggish</option>
+            </select>
+        <select [(ngModel)] = "addcake.type" value="{{addcake.type}}" type="text" class="form-control" placeholder="Enter Cake type" name="type"  aria-describedby="addon-wrapping">
+            <option value="" disabled selected>Choose a Cake-Type</option>
+            <option [ngValue] = "'birthday'" value="1">Birthday Cake</option>
+            <option [ngValue] = "'wedding'" value="2">Wedding Cake</option>
+            <option [ngValue] = "'anniversary'" value="2">Anniversary Cake</option>
+            <option [ngValue] = "'lockdown'" value="2">Lockdown Cake</option>
+        </select>
+    </div>
     <div id="detail" class="mb-3">
         <label for="weight">Weight
         <input [(ngModel)] = "addcake.weight" type="text" class="form-control" placeholder="Enter Cake Weight" name="weight"  aria-describedby="addon-wrapping">

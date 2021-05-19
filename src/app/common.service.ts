@@ -9,6 +9,7 @@ export class CommonService {
   placeorder: any = false;
   confirm: any = false;
 detail: any = [
+  "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGQHzNK3TvBamOrywD1zs9VmIvLymJBQ86g&usqp=CAU",
   "assets/carausal10.jpg",
   "assets/carausal6.jpg",
   "assets/carausal5.jpg",

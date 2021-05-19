@@ -4,7 +4,6 @@ h3{
     padding-bottom: 5vh;
 }
 .containers{
-    background: url('/assets/back.jpg') no-repeat;
     min-width: 100vw;
     min-height: 100vh;
 }
@@ -14,6 +13,8 @@ form{
     width: 30%;
     left: 35%;
     top: 20vh;
+    border-radius: 5px;
+    border: 2px solid #000000;
 }
 input{
     width: 20vw;
@@ -22,4 +23,7 @@ input{
 #submit{
     margin-left: 12vw;
     margin-bottom: 5vh;
+    background-color: burlywood;
+    border-radius: 5px;
+    border: 2px solid #000000;
 }
