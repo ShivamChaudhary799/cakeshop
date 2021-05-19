@@ -14,7 +14,9 @@ export class NavbarComponent implements OnInit {
   member: any = true;
   constructor(private router: Router,
     private toast: ToastrService,
-    private spinner: NgxSpinnerService) { }
+    private spinner: NgxSpinnerService) {
+     this.search();
+     }
 
 // function for searching cakes
 

@@ -28,7 +28,7 @@ const routes: Routes = [
   {path:'search', component:SearchcakeComponent},
   {path:'cakes/:cakeId', component:CakedetailComponent},
   {path:'cakecart', component:CakecartComponent,canActivate:[AuthGuardService]},
-  {path:'order', component:OrderComponent},
+  {path:'order', component:OrderComponent,canActivate:[AuthGuardService]},
   {path: 'checkout', component:CheckoutComponent,
   children:[
     {path: '',component:SummaryComponent},

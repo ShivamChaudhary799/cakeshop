@@ -11,13 +11,18 @@ import { ToastrService } from 'ngx-toastr';
 export class SignupComponent implements OnInit {
 users:any = {};
 message:any = {};
-  constructor(private route: RouterService, private router: Router,private http:HttpClient,private toastr: ToastrService) { }
+  constructor(private route: RouterService,
+    private router: Router,
+    private http:HttpClient,
+    private toastr: ToastrService) { }
 
   // function for httpApi
 
   register() {
     if (this.route.validate(this.users.email) === true){
+      this.toastr.info("Please wait...");
 
+      setTimeout(() => {
     let apiurl = "https://apifromashu.herokuapp.com/api/register";
     
     this.http.post(apiurl,this.users).subscribe(
@@ -30,8 +35,10 @@ message:any = {};
       },
       (error) => {
         console.log(error);
-      })
-      
+      });
+    }, 5000);
+    
+     
   }
 }
   ngOnInit(): void {
