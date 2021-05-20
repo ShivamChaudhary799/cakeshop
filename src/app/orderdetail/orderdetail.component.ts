@@ -24,7 +24,7 @@ personal: any = {};
   (error) => {
     console.log(error);
   });
-   }
+}
 
   checkout(){
     var api = "https://apifromashu.herokuapp.com/api/addcakeorder";
@@ -36,7 +36,6 @@ personal: any = {};
       console.log(error);
     })
   }
-
   canDeactivate(){
   return confirm('I want to Discard!!');
   }

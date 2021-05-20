@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AddcakeComponent } from './addcake/addcake.component';
 import { AdminComponent } from './admin/admin.component';
 import { AuthGuardService } from './auth-guard.service';
+import { CakecardComponent } from './cakecard/cakecard.component';
 import { CakecartComponent } from './cakecart/cakecart.component';
 import { CakedetailComponent } from './cakedetail/cakedetail.component';
 import { CheckoutComponent } from './checkout/checkout.component';
@@ -15,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { OrderComponent } from './order/order.component';
 import { OrderdetailComponent } from './orderdetail/orderdetail.component';
 import { PasswordComponent } from './password/password.component';
+import { RouteResolverService } from './route-resolver.service';
 import { SearchcakeComponent } from './searchcake/searchcake.component';
 import { SignupComponent } from './signup/signup.component';
 import { SummaryComponent } from './summary/summary.component';
@@ -27,7 +29,7 @@ const routes: Routes = [
   {path:'password', component: PasswordComponent},
   {path:'search', component:SearchcakeComponent},
   {path:'cakes/:cakeId', component:CakedetailComponent},
-  {path:'cakecart', component:CakecartComponent,canActivate:[AuthGuardService]},
+  {path:'cakecart', component:CakecartComponent,canActivate:[AuthGuardService],resolve:[RouteResolverService]},
   {path:'order', component:OrderComponent,canActivate:[AuthGuardService]},
   {path: 'checkout', component:CheckoutComponent,
   children:[

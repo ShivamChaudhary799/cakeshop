@@ -5,6 +5,7 @@ import { CommonService } from '../common.service';
 import { Router } from '@angular/router';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { NgxSpinnerService } from "ngx-spinner";
+import { Observable } from 'rxjs';
 @Component({
   selector: 'app-cakecart',
   templateUrl: './cakecart.component.html',
@@ -20,10 +21,15 @@ detail:any = [];
     private spinner: NgxSpinnerService) {
       this.spinner.show();
       setTimeout(() => {
-        this.display();
+        router.data.subscribe((response) => {
+          this.detail= response[0].data;
+        })
         this.spinner.hide();
       }, 3000);   
+      
   }
+
+  
   display() {
     var api = "https://apifromashu.herokuapp.com/api/cakecart";
       this.client.post(api,{}).subscribe((response:any) => {

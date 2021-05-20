@@ -26,7 +26,6 @@ import { AuthenticationService } from './authentication.service';
 import { OrderComponent } from './order/order.component';
 import { OrderdetailComponent } from './orderdetail/orderdetail.component';
 import { NgxSpinnerModule } from "ngx-spinner";
-import { NgxPaginationModule } from 'ngx-pagination';
 import { AdminComponent } from './admin/admin.component';
 import { EditComponent } from './edit/edit.component';
 import { CheckoutComponent } from './checkout/checkout.component';
@@ -36,6 +35,7 @@ import { ConfirmComponent } from './confirm/confirm.component';
 import { AuthGuardService } from './auth-guard.service';
 import { DeactivateService } from './deactivate.service';
 import { AddcakeComponent } from './addcake/addcake.component';
+import { DiscountPipe } from './discount.pipe';
 
 @NgModule({
   declarations: [
@@ -63,7 +63,8 @@ import { AddcakeComponent } from './addcake/addcake.component';
     SummaryComponent,
     PaymentComponent,
     ConfirmComponent,
-    AddcakeComponent
+    AddcakeComponent,
+    DiscountPipe
     
   ],
   imports: [
@@ -74,8 +75,7 @@ import { AddcakeComponent } from './addcake/addcake.component';
     CommonModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
-    NgxSpinnerModule,
-    NgxPaginationModule
+    NgxSpinnerModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [{

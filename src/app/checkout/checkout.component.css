@@ -1,9 +1,12 @@
 .sidebar{
     position: relative;
     width: 20%;
+    height: 35vh;
     left: 3vw;
+    top: 15vh;
     background-color: rgba(0, 0, 255, 0.596);
-
+    border: 2px solid #000000;
+    border-radius: 5px;
 }
 .sidebar li{
     padding-top: 5vh;
@@ -14,7 +17,6 @@
     color: red
 }
 .containers{
-    background: url('/assets/background.jpg') no-repeat;
     min-width: 100vw;
     min-height: 100vh;
     display: flex;

@@ -7,6 +7,9 @@ input {
 button {
     margin-left: 22vw;
     margin-bottom: 3vh;
+    background-color: rgba(0, 0, 255, 0.596);
+    border-radius: 5px;
+    border: 2px solid #000000;
 }
 form{
     position: relative;

@@ -5,10 +5,10 @@
         <form class="d-flex">
           <input name="search" [(ngModel)] = "searchcakes" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
           <button  (click) = "search()" class="btn btn-outline-danger" type="submit">Search</button>
-          <button routerLink = "/order" class="btn btn-outline-danger" *ngIf = "!member"  type="button">orders</button>
+          <button id="myorder" routerLink = "/order" class="btn btn-outline-danger" *ngIf = "!member"  type="button">My Orders</button>
           <button routerLink="./cakecart" class="btn btn-outline-danger" *ngIf = "!member"  type="button"><i class="fas fa-shopping-cart"></i></button>
-          <button routerLink = "./login" class="btn btn-outline-danger" *ngIf = "member"  type="submit">Login</button>
-          <button (click) = "logout()" class="btn btn-outline-danger" *ngIf = "!member"  type="button">Logout</button>
+          <button id="login" routerLink = "./login" class="btn btn-outline-danger" *ngIf = "member"  type="submit"><i class="fas fa-sign-in-alt"></i> Login</button>
+          <button id="logout" (click) = "logout()" class="btn btn-outline-danger" *ngIf = "!member"  type="button"><i class="fas fa-sign-out-alt"></i> Logout</button>
         </form>
       </div>
   </nav>

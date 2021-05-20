@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
 import { HttpClient } from '@angular/common/http';
+// import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root'
@@ -29,7 +30,7 @@ detail: any = [
 //   {id: 10,image: "assets/card10.jpg",name:"Chocolate Caramel Fudge Cake", weight:"1/2 kg", Price: 500, eggless:false}
 // ];
 data:any=[];
-  constructor(private route: Router,private http:HttpClient) {
+  constructor(private route: Router,private http:HttpClient) {;
     let url = "https://apifromashu.herokuapp.com/api/allcakes";
     this.http.get(url).subscribe(
       (response:any) => {
@@ -41,7 +42,7 @@ data:any=[];
       (error) => {
         console.log(error);
       })
-   }
+    }
 }
 
 

@@ -1,6 +1,9 @@
 button.btn{
 margin: 5px;
 }
+#logout,#login,#myorder{
+    width: 20vw;
+}
 .navbar{
     background-color: pink;
 }
