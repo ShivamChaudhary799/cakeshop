@@ -36,7 +36,8 @@ import { AuthGuardService } from './auth-guard.service';
 import { DeactivateService } from './deactivate.service';
 import { AddcakeComponent } from './addcake/addcake.component';
 import { DiscountPipe } from './discount.pipe';
-
+import { MatSliderModule } from '@angular/material/slider';
+import { MatPaginatorModule} from '@angular/material/paginator'
 @NgModule({
   declarations: [
     AppComponent,
@@ -75,7 +76,9 @@ import { DiscountPipe } from './discount.pipe';
     CommonModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
-    NgxSpinnerModule
+    NgxSpinnerModule,
+    MatSliderModule,
+    MatPaginatorModule
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   providers: [{
