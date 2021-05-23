@@ -1,8 +1,12 @@
-  <button id="checkout" routerLink = "/checkout"  class="btn btn-success" type="button">Checkout</button>
+<div *ngIf = "!flag">
+
+</div>
+  <button *ngIf = "flag" id="checkout" routerLink = "/checkout"  class="btn btn-success" type="button">Checkout</button>
   <button id="admin" routerLink = "/admin"  class="btn btn-success" type="button">Admin panel</button>
-<div class="containers">
+<div  class="containers">
   <div class="table">
     <h2 id="title">Your Cart</h2>
+    
     <div class="table-heading">
       <th scope="col">#</th>
       <th scope="col">Cake</th>
@@ -11,7 +15,6 @@
       <th scope="col">Weight</th>
       <th scope="col">Remove</th>
     </div>
-  
   
   <div *ngFor = "let item of detail; let i = index" class="table-record">
     <td scope="row">{{ i + 1 }}</td>

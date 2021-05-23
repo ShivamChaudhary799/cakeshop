@@ -29,5 +29,9 @@ img{
     color: rgba(128, 128, 128, 0.753);
 }
 button{
-   margin-left: 15vw;
+   margin-left: 20vw;
+   margin-top: 2vh;
+}
+#title{
+    margin-left: 30vw;
 }

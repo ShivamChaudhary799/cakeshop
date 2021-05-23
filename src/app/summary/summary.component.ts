@@ -18,7 +18,7 @@ export class SummaryComponent implements OnInit {
     private toast:ToastrService,
     private route:Router) {
       this.display();
-     }
+    }
 
   display() {
     var api = "https://apifromashu.herokuapp.com/api/cakecart";

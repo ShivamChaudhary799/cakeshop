@@ -3,13 +3,16 @@
     left: 15vw;
     top: 5vh;
     width: 50vw;
-    background-color: rgba(0, 0, 255, 0.452);
+    /* background-color: rgba(0, 0, 255, 0.452); */
     border: 2px solid #000000;
     border-radius: 5px;
 }
 #title{
     /* margin-left: 10vw; */
+    /* text-align: center; */
     text-align: center;
+    color: brown;
+    background-color: burlywood;
 }
 #cakeimg{
     width: 5vw;

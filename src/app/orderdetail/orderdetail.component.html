@@ -1,6 +1,6 @@
 <div class="containers">
 <form action="">
-<h2 class="pt-5 mb-5">Billing Details</h2>
+<h2 class="mb-5">Billing Details</h2>
 <div class="mb-3 col-5">
     <input [(ngModel)] = "personal.name" type="text" name="name" class="form-control" placeholder="Name" aria-label="Username" aria-describedby="basic-addon1">
 </div>
@@ -17,7 +17,7 @@
     <input [(ngModel)] = "personal.pincode" type="text" name="pincode" class="form-control" placeholder="Pincode" maxlength="6" minlength="6" aria-label="Username" aria-describedby="basic-addon1">
 </div>
 <div class="mb-3 col-5">
-    <button  (click) = "checkout()">Submit</button>
+    <button (click) = "checkout()">Submit</button>
 </div>
 </form>
 </div>

@@ -1,6 +1,6 @@
 <div class="containers">
     <form action="">
-    <h3>Edit Details</h3>
+    <h2>Edit Details</h2>
     <div id="detail" class="mb-3">
         <label for="name">Name
         <input [(ngModel)] = "editdata.name" value="{{editdata.name}}"  type="text" class="form-control" placeholder="Enter Cake Name" name="name"  aria-describedby="addon-wrapping">
@@ -41,6 +41,6 @@
     <div id="photo">
         <img [src] ="editdata.image" alt="" srcset="">
     </div>
-      <button (click) = "update()" class="btn btn-primary" id="edit">Save Changes</button>
+      <button (click) = "update()" id="edit">Save Changes</button>
     </form>
     </div>

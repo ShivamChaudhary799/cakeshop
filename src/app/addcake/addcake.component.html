@@ -1,6 +1,6 @@
 <div class="containers">
     <form action="">
-    <h3>Add new cake</h3>
+    <h2>Add new cake</h2>
     <div id="detail" class="mb-3">
         <label for="name">Name
         <input [(ngModel)] = "addcake.name"  type="text" class="form-control" placeholder="Enter Cake Name" name="name"  aria-describedby="addon-wrapping">
@@ -47,7 +47,7 @@
     <div id="photo">
         <img [src] ="addcake.image" alt="" srcset="">
     </div>
-      <button (click) = "add()" id="edit">Add Cake</button>
+      <button (click) = "add()" id="add">Add Cake</button>
     </form>
     </div>
 

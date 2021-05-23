@@ -3,7 +3,9 @@
     left: 15vw;
     top: 10vh;
     width: 50vw;
-    background-color: rgba(0, 0, 255, 0.452);
+    background-color: burlywood;
+    border-radius: 5px;
+    border: 2px solid #000000;
 }
 p{
     padding-top: 10vh;

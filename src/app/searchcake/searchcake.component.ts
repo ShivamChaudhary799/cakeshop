@@ -11,7 +11,7 @@ import { HttpClient } from '@angular/common/http';
 export class SearchcakeComponent implements OnInit {
   price: any = {}
 searchdata: any = [];
-teststring:any = "chocolate";
+teststring:any = "";
 
 // function for filtering cake type
 

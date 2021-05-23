@@ -13,6 +13,8 @@ import { Observable } from 'rxjs';
 })
 export class CakecartComponent implements OnInit {
 detail:any = [];
+flag: any = true;
+
   constructor(private router:ActivatedRoute,
     private common:CommonService,
     private client:HttpClient,
@@ -23,6 +25,9 @@ detail:any = [];
       setTimeout(() => {
         router.data.subscribe((response) => {
           this.detail= response[0].data;
+          if (this.detail.length === 0) {
+            this.flag = false;
+          }
         })
         this.spinner.hide();
       }, 3000);   

@@ -22,7 +22,7 @@ import { SignupComponent } from './signup/signup.component';
 import { SummaryComponent } from './summary/summary.component';
 
 const routes: Routes = [
-  {path:'login', component: LoginComponent,canActivate:[AuthGuardService]},
+  {path:'login', component: LoginComponent,canActivate:[AuthGuardService],resolve:[RouteResolverService]},
   {path:'', component: HomeComponent},
   {path:'signup', component: SignupComponent},
   {path:'forgot', component: ForgotComponent},
