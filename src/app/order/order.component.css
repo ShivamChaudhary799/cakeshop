@@ -1,3 +1,8 @@
+/* For styling page */
+.containers{
+    height: auto;
+}
+/* For styling table */
 .table h2{
     text-align: center;
     color: brown;
@@ -6,10 +11,6 @@
 .table .table-heading, .table-record{
     display: grid;
     grid-template-columns: repeat(6,1fr);
-}
-.containers{
-    height: auto;
-    
 }
 .table{
     position:relative;
@@ -20,23 +21,28 @@
     border: 2px solid #000000;
     border-radius: 5px;
 }
+/* for hiding order details */
 .hidden{
     display: none;
 }
+/* for dividing sections */
 #buydata{
     display: flex;
     justify-content: space-around;
 }
+/* For styling images */
 .image img{
     width: 10vw;
     height: 30vh;
 }
+/* for hovering  */
 .table-record:hover{
     color: rgba(128, 128, 128, 0.753);
 }
 .orderdata{
     width: 100%;
 }
+/* For styling order-details */
 .data{
     list-style: none;
 }

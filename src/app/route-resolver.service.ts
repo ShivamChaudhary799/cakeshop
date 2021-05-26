@@ -7,7 +7,8 @@ import { ActivatedRouteSnapshot, Resolve, RouterStateSnapshot } from '@angular/r
 })
 export class RouteResolverService implements Resolve<any> {
   constructor(private http: HttpClient) { }
-
+  
+// route resolver
   resolve(route: ActivatedRouteSnapshot) {
     return this.http.post("https://apifromashu.herokuapp.com/api/cakecart",{});
   } 

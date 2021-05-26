@@ -1,3 +1,5 @@
+<!-- for creating cakecart page -->
+
 <div *ngIf = "!flag">
 
 </div>
@@ -5,8 +7,9 @@
   <button id="admin" routerLink = "/admin"  class="btn btn-success" type="button">Admin panel</button>
 <div  class="containers">
   <div class="table">
+    <!-- creating a heading -->
     <h2 id="title">Your Cart</h2>
-    
+    <!-- creating a table -->
     <div class="table-heading">
       <th scope="col">#</th>
       <th scope="col">Cake</th>
@@ -15,20 +18,22 @@
       <th scope="col">Weight</th>
       <th scope="col">Remove</th>
     </div>
-  
+  <!-- Looping a data -->
   <div *ngFor = "let item of detail; let i = index" class="table-record">
     <td scope="row">{{ i + 1 }}</td>
     <td scope="col"><img id="cakeimg" src="{{item.image}}" alt=""></td>
     <td>{{item.name}}</td>
     <td>Rs.{{item.price}}/-</td>
     <td>{{item.weight}} kg</td>
+    <!-- creating a remove button -->
     <td><i (click) = "remove(item.cakeid)" class="fa fa-trash"></i></td>
   </div>
 
+<!-- if no data in the cart -->
 <li *ngIf="detail?.length == 0">
   <span class="search_no_results">
      <img id="norecord" src="/assets/no-record-found.png" alt="" srcset="">
   </span>
 </li>
-
+<!-- for spinner -->
 <ngx-spinner></ngx-spinner>

@@ -1,7 +1,10 @@
+<!-- for creating cake cards -->
+
 <div (click) = "getdata(cakes.cakeid)" appZoomhover class="card" style="width: 18rem;">  
   <img *ngIf="!cakes.eggless" class="size" src="/assets/veg.png" alt="">
   <img *ngIf="cakes.eggless" class="size" src="/assets/nonveg.png" alt="">
   <img src="{{cakes.image}}" class="card-img-top" alt="...">
+  <!-- Creating a cake card -->
     <div class="card-body">
       <h5 class="card-title">{{cakes.name}}</h5>
       <p class="card-text">{{cakes.Type}}</p>

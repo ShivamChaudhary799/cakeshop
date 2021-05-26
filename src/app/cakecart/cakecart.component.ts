@@ -21,6 +21,9 @@ flag: any = true;
     private toast:ToastrService,
     private route:Router,
     private spinner: NgxSpinnerService) {
+
+      // for adding Spinner
+
       this.spinner.show();
       setTimeout(() => {
         router.data.subscribe((response) => {
@@ -34,7 +37,8 @@ flag: any = true;
       
   }
 
-  
+  // for showing cake data in a cart
+
   display() {
     var api = "https://apifromashu.herokuapp.com/api/cakecart";
       this.client.post(api,{}).subscribe((response:any) => {
@@ -46,9 +50,10 @@ flag: any = true;
     })
   }
   
+  // for removing cake data records from cake cart
+
   remove(i:any) {
     console.log(i);
-    
     var api = "https://apifromashu.herokuapp.com/api/removecakefromcart";
     this.client.post(api, { cakeid:i } ).subscribe((response: any) => {
       console.log("response from removecart", response);

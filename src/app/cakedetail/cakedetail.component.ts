@@ -13,6 +13,7 @@ export class CakedetailComponent implements OnInit {
 cake:any;
 cakeids:any;
 detail: any = {};
+
 // Searching through IDs
 
   constructor(private router:ActivatedRoute,
@@ -66,27 +67,6 @@ detail: any = {};
     }
     
     
-  }
-
-  submit(e:any){
-    var myheaders = new HttpHeaders();
-    var token = JSON.parse(localStorage.member).token;
-    myheaders = myheaders.set('authtoken',token)
-
-    var formData = new FormData();
-    formData.append("file",e.target.file[0]);
-
-    var api = "https://apifromashu.herokuapp.com/api/upload";
-    this.client.post(api,formData,{
-      headers:myheaders
-    }).subscribe((response) => {
-      console.log("Image upload:",response);
-
-    },
-    (error) => {
-      console.log(error);
-    })
-
   }
   ngOnInit(): void {
   }

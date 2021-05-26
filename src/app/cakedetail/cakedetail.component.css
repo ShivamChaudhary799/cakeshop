@@ -1,28 +1,28 @@
-.containers{
-
-}
+/* for dividing page into section and giving styling */
 section{
     display: flex;
     justify-content: space-around;
-    /* background: burlywood; */
     background-color: rgba(188, 143, 143, 0.561);
     height: 100vh;
     color: purple;
 }
+/* styling left side section */
 .left{
-    /* width: 10%; */
     padding-top: 10vh;
 }
-img:hover{
-    box-shadow: 10px 4px 10px chocolate;
-}
+/* styling right side section */
 .right{
     padding-top: 12vh;
+}
+/* styling images */
+img:hover{
+    box-shadow: 10px 4px 10px chocolate;
 }
 img{
     width: 40vw;
     height: 80vh;
 }
+/* styling buttons */
 #cart,#buy{
     padding-left: 4vw;
     padding-right: 4vw;

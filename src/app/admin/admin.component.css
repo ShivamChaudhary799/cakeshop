@@ -1,7 +1,16 @@
+/* for image style */
+
 img{
     width: 30px;
     height: 30px;
 }
+/* for page style */
+
+.containers{
+    height: 200vh;
+}
+/* for styling table */
+
 .table h2{
     padding-bottom: 2vh;
     margin-left: 25vw;
@@ -10,10 +19,6 @@ img{
     display: grid;
     grid-template-columns: 1fr 2fr 3fr 2fr 2fr;
     padding-left: 5vw;
-}
-.containers{
-    height: 200vh;
-    
 }
 .table{
     background: rgba(255, 192, 203, 0.678);
@@ -28,10 +33,14 @@ img{
 .table-record:hover{
     color: rgba(128, 128, 128, 0.753);
 }
+/* for styling button */
+
 button{
    margin-left: 20vw;
    margin-top: 2vh;
 }
+/* for styling title */
+
 #title{
     margin-left: 30vw;
 }

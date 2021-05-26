@@ -1,5 +1,8 @@
+<!-- For creating Signup form -->
 <div class="containers">
+    <!-- creating a form -->
 <form>
+    <!-- Heading -->
     <h2>SignUp</h2>
 <div class="mb-3 col-4">
     <input [(ngModel)] = "users.name" type="text" class="form-control" placeholder="Enter your name" name="name" aria-label="Username" aria-describedby="addon-wrapping">
@@ -10,6 +13,7 @@
 <div class="mb-3 col-4">
     <input [(ngModel)] = "users.password" type="password" class="form-control" placeholder="Enter your Pasword" name="password" aria-label="Username" aria-describedby="addon-wrapping">
 </div>
+<!-- creating a sign-up button -->
 <button (click) = "register()" id="signup">Signup</button>
 </form>
 </div>

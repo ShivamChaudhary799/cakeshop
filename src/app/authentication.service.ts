@@ -6,6 +6,9 @@ import { ToastrService } from 'ngx-toastr';
 })
 export class AuthenticationService {
   constructor(private toast:ToastrService) { }
+
+  // HTTPInterceptor
+  
   intercept(request : HttpRequest<any> , next : HttpHandler){
     if(localStorage.member){
       request = request.clone({

@@ -1,5 +1,8 @@
+<!-- for creating edit page -->
 <div class="containers">
+    <!-- creating a form -->
     <form action="">
+        <!-- Heading -->
     <h2>Edit Details</h2>
     <div id="detail" class="mb-3">
         <label for="name">Name
@@ -33,6 +36,7 @@
         <textarea [(ngModel)] = "editdata.description" value="{{editdata.description}}" type="text" class="form-control" placeholder="Enter Cake Description" name="description"  aria-describedby="addon-wrapping"></textarea>
     </label>
     </div>
+    <!-- uploading images -->
     <div id="image">
         <label for="name">Image
         <input (change) = "submit($event)" type="file">
@@ -41,6 +45,7 @@
     <div id="photo">
         <img [src] ="editdata.image" alt="" srcset="">
     </div>
+    <!-- creating a submit button -->
       <button (click) = "update()" id="edit">Save Changes</button>
     </form>
     </div>

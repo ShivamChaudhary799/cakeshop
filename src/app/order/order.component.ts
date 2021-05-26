@@ -11,6 +11,9 @@ export class OrderComponent implements OnInit {
   orderdetail:any = [];
   personal: any = {};
   constructor(public cs: CommonService,private client:HttpClient) { 
+    
+    // for fetching cakeorder details through API
+
    var api = "https://apifromashu.herokuapp.com/api/cakeorders";
    this.client.post(api,{}).subscribe((response:any) => {
      this.orderdetail = response.cakeorders;

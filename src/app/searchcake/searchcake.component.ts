@@ -35,7 +35,7 @@ searchcakes: any = [...this.cs.data];
   }
   cakeType = this.cs.data;
 
-  // function for filtering according to prices
+  // function for filtering cakes according to prices
 
   cakesort(){
     if(this.price.min || this.price.max){
@@ -43,7 +43,6 @@ searchcakes: any = [...this.cs.data];
         (this.price.min ? e.price >= this.price.min : true) &&
         (this.price.max ? e.price <= this.price.max : true)
       )
-      
     }
   }
   ngOnInit(): void {

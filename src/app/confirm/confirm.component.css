@@ -1,3 +1,4 @@
+/* for styling page */
 .containers{
     position: relative;
     left: 15vw;
@@ -7,6 +8,7 @@
     border-radius: 5px;
     border: 2px solid #000000;
 }
+/* for styling confirmation UI */
 p{
     padding-top: 10vh;
     padding-bottom: 10vh;

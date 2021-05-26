@@ -9,6 +9,8 @@ export class ZoomhoverDirective {
     this.htmlelement = this.element.nativeElement;
    }
 
+// Giving hovering style to cake images
+
    @HostListener('mouseenter') out(){
     this.htmlelement.style.transform = "scale(1.1)";
     this.htmlelement.style.boxShadow = "5px 10px 10px pink";

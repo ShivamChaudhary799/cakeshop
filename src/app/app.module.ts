@@ -14,7 +14,6 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { ForgotComponent } from './forgot/forgot.component';
-import { PasswordComponent } from './password/password.component';
 import { SearchcakeComponent } from './searchcake/searchcake.component';
 import { CakedetailComponent } from './cakedetail/cakedetail.component';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
@@ -30,7 +29,6 @@ import { AdminComponent } from './admin/admin.component';
 import { EditComponent } from './edit/edit.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { SummaryComponent } from './summary/summary.component';
-import { PaymentComponent } from './payment/payment.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { AuthGuardService } from './auth-guard.service';
 import { DeactivateService } from './deactivate.service';
@@ -52,7 +50,6 @@ import { MatPaginatorModule} from '@angular/material/paginator'
     SignupComponent,
     HomeComponent,
     ForgotComponent,
-    PasswordComponent,
     SearchcakeComponent,
     CakedetailComponent,
     CakecartComponent,
@@ -62,7 +59,6 @@ import { MatPaginatorModule} from '@angular/material/paginator'
     EditComponent,
     CheckoutComponent,
     SummaryComponent,
-    PaymentComponent,
     ConfirmComponent,
     AddcakeComponent,
     DiscountPipe

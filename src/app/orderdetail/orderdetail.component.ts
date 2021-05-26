@@ -15,6 +15,9 @@ personal: any = {};
     private http:HttpClient,
     private route: ActivatedRoute,
     private router: Router) {
+
+      // for fetching cake-cart data through API
+
     var api = "https://apifromashu.herokuapp.com/api/cakecart";
     this.http.post(api,{}).subscribe((response:any) => {
     this.personal.cakes = response.data;
@@ -26,6 +29,8 @@ personal: any = {};
   });
 }
 
+// Function for adding cake in the order list
+
   checkout(){
     var api = "https://apifromashu.herokuapp.com/api/addcakeorder";
     this.http.post(api,this.personal).subscribe((response:any) => {
@@ -36,6 +41,9 @@ personal: any = {};
       console.log(error);
     })
   }
+  
+  // for deactivating 
+
   canDeactivate(){
   return confirm('I want to Discard!!');
   }

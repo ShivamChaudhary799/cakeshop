@@ -17,9 +17,10 @@ export class SummaryComponent implements OnInit {
     private client:HttpClient,
     private toast:ToastrService,
     private route:Router) {
+      // Calling display function
       this.display();
     }
-
+// function for showing cakecart items
   display() {
     var api = "https://apifromashu.herokuapp.com/api/cakecart";
       this.client.post(api,{}).subscribe((response:any) => {
@@ -30,7 +31,7 @@ export class SummaryComponent implements OnInit {
       console.log(error);
     })
   }
-
+// function for navigating to next page on clicking button
   next(){
     this.common.placeorder = true;
     this.route.navigate(['/checkout/orderdetail']);

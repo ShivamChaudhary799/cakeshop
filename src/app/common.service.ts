@@ -9,6 +9,7 @@ import { HttpClient } from '@angular/common/http';
 export class CommonService {
   placeorder: any = false;
   confirm: any = false;
+  // Property for carousal images
 detail: any = [
   "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGQHzNK3TvBamOrywD1zs9VmIvLymJBQ86g&usqp=CAU",
   "assets/carausal10.jpg",
@@ -29,6 +30,8 @@ detail: any = [
 //   {id: 9,image: "assets/card9.jpg",name:"Designer Chocolate Cream Cake", weight:"1/2 kg", Price: 700, eggless:true},
 //   {id: 10,image: "assets/card10.jpg",name:"Chocolate Caramel Fudge Cake", weight:"1/2 kg", Price: 500, eggless:false}
 // ];
+
+// Property for fetching cakes through API
 data:any=[];
   constructor(private route: Router,private http:HttpClient) {;
     let url = "https://apifromashu.herokuapp.com/api/allcakes";

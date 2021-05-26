@@ -9,7 +9,7 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./cakecard.component.css']
 })
 export class CakecardComponent implements OnInit {
-// data:any;
+
 // for adding cakecards
 @Input() cakes:any;
   constructor(public card: CommonService,private route: Router,private http:HttpClient) { 

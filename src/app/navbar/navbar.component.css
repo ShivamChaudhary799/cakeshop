@@ -1,9 +1,12 @@
+/* For styling Search button */
 button.btn{
 margin: 5px;
 }
+/* For styling buttons */
 #logout,#login,#myorder{
     width: 20vw;
 }
+/* For styling navigation-bar */
 .navbar{
     background-color: pink;
 }

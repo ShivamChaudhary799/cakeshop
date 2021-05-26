@@ -1,3 +1,4 @@
+/* For creating heading */
 h3{
     text-align: center;
 }
@@ -11,6 +12,7 @@ h3{
     min-width: 100vw;
     min-height: 100vh;
 }
+/* for sizing input box */
 #size{
     width: 60vw;
     margin-left: 20vw;

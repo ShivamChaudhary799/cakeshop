@@ -16,6 +16,9 @@ cakeids:any;
     private toast: ToastrService,
     private route: RouterService,
     private router:ActivatedRoute) { 
+
+      // for fetching data through ids
+
       this.cakeids = this.router.snapshot.params.cakeId;
       var api = "https://apifromashu.herokuapp.com/api/cake/"+this.cakeids;
       this.client.get(api).subscribe((response:any) => {
@@ -29,6 +32,7 @@ cakeids:any;
     }
     
     
+// function for uploading images
 
   submit(e:any){
     var myheaders = new HttpHeaders();
@@ -50,6 +54,8 @@ cakeids:any;
     })
 
   }
+  
+// function for updating cake data records
 
   update(){
     console.log(this.editdata);

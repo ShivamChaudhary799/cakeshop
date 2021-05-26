@@ -1,11 +1,13 @@
+<!-- for creating UI for cakedetail page -->
+
 <div class="containers">
+    <!-- dividing a section -->
 <section>
     <div class="left">
         <img src="{{detail.image}}" alt="">
     </div>
     <div class="right">
         <h3>{{detail.name}}</h3>
-        <!-- <p>Rating:</p> -->
         <p class="price"><b>Price:</b>  Rs.{{detail.price}}/-</p>
         <h4>Product Detail:</h4>
         <li>Weight:  {{detail.weight}}</li>
@@ -16,7 +18,11 @@
         <br>
         <h4>Product Description:</h4>
         <p>{{detail.description}}</p>
+
+        <!-- creating a cart buttons -->
         <button routerLink = "/cakecart" (click) = "cart()" id="cart" class="btn btn-danger">ADD TO CART</button>
+        
+        <!-- creating a buy buttons -->
         <button id="buy" class="btn btn-success">BUY NOW</button>
     </div>
 </section>

@@ -1,27 +1,29 @@
+/* for styling page */
 .containers{
     position: relative;
     left: 15vw;
     top: 5vh;
     width: 50vw;
-    /* background-color: rgba(0, 0, 255, 0.452); */
     border: 2px solid #000000;
     border-radius: 5px;
 }
+/* for styling heading */
 #title{
-    /* margin-left: 10vw; */
-    /* text-align: center; */
     text-align: center;
     color: brown;
     background-color: burlywood;
 }
+/* for styling image */
 #cakeimg{
     width: 5vw;
     height: 5vw;
 }
+/* for styling checkout button */
 #checkout{
     margin-left: 80vw;
     margin-top: 2vh;
 }
+/* for styling button */
 button{
     margin-left: 20vw;
     margin-bottom: 2vh;

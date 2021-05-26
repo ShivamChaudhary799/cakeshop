@@ -1,3 +1,4 @@
+/* for styling heading */
 h2{
     text-align: center;
     padding-top: 1vh;
@@ -5,10 +6,12 @@ h2{
     color: brown;
     background-color: burlywood;
 }
+/* for styling page */
 .containers{
     min-width: 100vw;
     min-height: 100vh;
 }
+/* for styling form */
 form{
     position: relative;
     background-color: rgba(188, 143, 143, 0.561);
@@ -18,16 +21,19 @@ form{
     border-radius: 5px;
     border: 2px solid #000000;
 }
+/* for styling input box */
 input{
     width: 20vw;
     margin-left: 5vw;
 }
+/* for styling button */
 button{
     margin-left: 12vw;
     background-color: burlywood;
     border-radius: 5px;
     border: 2px solid #000000;
 }
+/* for styling signup button */
 #signup{
     margin-left: 12vw;
     margin-bottom: 4vh;

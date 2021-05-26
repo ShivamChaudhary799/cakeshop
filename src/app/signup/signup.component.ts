@@ -16,7 +16,7 @@ message:any = {};
     private http:HttpClient,
     private toastr: ToastrService) { }
 
-  // function for httpApi
+  // function for registering user through Api
 
   register() {
     if (this.route.validate(this.users.email) === true){

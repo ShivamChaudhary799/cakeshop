@@ -1,6 +1,11 @@
+<!-- For creating order page -->
+
 <div class="containers">
+  <!-- creating a table -->
 <div class="table">
+  <!-- creating a heading -->
   <h2 id="title">My Orders</h2>
+  <!-- table heading -->
   <div class="table-heading">
     <th scope="col">#</th>
     <th scope="col">Order Id</th>
@@ -10,7 +15,7 @@
     <th scope="col">Mode</th>
   </div>
 
-
+<!-- Looping a data -->
 <div *ngFor = "let detail of orderdetail; let i = index">
   <div class="table-record" (click) = "buydetail(i)">
     <td scope="row">{{ i + 1 }}</td>
@@ -21,9 +26,11 @@
     <td>{{detail.mode}}</td>
 </div>
 
-
+<!-- for order detail -->
 <div class=" orderdata hidden" id="buy{{i}}">
+  <!-- Heading -->
   <h4>Order Details</h4>
+  <!-- Looping a data -->
   <div class="contain" *ngFor= "let buyitem of detail.cakes" >
     <div id="buydata">
       <div class="image">
@@ -41,5 +48,5 @@
 </div>
 </div>
 </div>
-
+<!-- for routing -->
 <router-outlet></router-outlet>

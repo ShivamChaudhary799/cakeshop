@@ -9,6 +9,9 @@ export class AuthGuardService implements CanActivate{
   constructor(private router: Router,private toast: ToastrService) {
     console.log(localStorage.member);
    }
+   
+  //  canActivate Function
+
   canActivate(route: ActivatedRouteSnapshot,state: RouterStateSnapshot):boolean {
     console.log(route,state);
     if(state.url === '/login') {

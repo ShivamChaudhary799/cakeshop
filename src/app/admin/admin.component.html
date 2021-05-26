@@ -1,4 +1,7 @@
+<!-- Creating for Admin panel form page -->
+
 <div class="containers">
+  <!-- Creating a table -->
   <div class="table">
     <h2 id="title">Admin Panel <button routerLink= "/admin/addcakes" class="btn btn-secondary">Add Cake</button></h2>
     <div class="table-heading">
@@ -9,13 +12,14 @@
       <th scope="col">Edit</th>
     </div>
   
-  
+  <!-- Looping a data -->
   <div *ngFor = "let item of data; let i = index">
     <div class="table-record">
       <td scope="row">{{ i + 1 }}</td>
       <td scope="col"><img id="cakeimg" src="{{item.image}}" alt=""></td>
       <td>{{item.name}}</td>
       <td>Rs.{{item.price}}/-</td>
+      <!-- creating a edit button -->
       <td><i (click) = "edit(item.cakeid)" class="fa fa-edit"></i></td>
   </div>
   </div>

@@ -18,8 +18,8 @@ user:any = {};
   forgot() {
     console.log(this.user);
      if (this.route.validate(this.user.email) === true) {
-      // this.router.navigate(['/login']);
      }
+    //  for forgot password API
       let apiurl = "https://apifromashu.herokuapp.com/api/recoverpassword";
       
       this.http.post(apiurl,{email:this.user.email}).subscribe(
@@ -29,10 +29,8 @@ user:any = {};
         },
         (error) => {
           console.log(error);
-        })
-        
+        }) 
     }
   ngOnInit(): void {
   }
-
 }

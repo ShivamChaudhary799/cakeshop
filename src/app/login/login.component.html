@@ -1,5 +1,9 @@
+<!-- For login page UI -->
+
 <div class="containers">
+  <!-- creating a form -->
 <form action="" (submit) = "login()">
+  <!-- Heading -->
   <h2>Please Login</h2>
   <div class="mb-3 col-4">
     <input [(ngModel)] = "user.email" type="text" class="form-control" placeholder="Enter your Email Address" name="email" aria-label="Username" aria-describedby="addon-wrapping" required="true">
@@ -7,12 +11,15 @@
 <div class="mb-3 col-4">
     <input [(ngModel)] = "user.password" type="password" class="form-control" placeholder="Enter your Password" name="password" aria-label="Username" aria-describedby="addon-wrapping" required>
 </div>
+<!-- creating a login button -->
   <button type="submit"  id="login">Login</button>
+  <!-- creating a sign-up button -->
   <p class="mt-3" id="signup">Create an account?<a routerLink = "/signup">Signup</a></p>
+  <!-- creating a forgot password button -->
   <p id="forgot">Forget Password?<a routerLink = "/forgot">Forgot Password</a></p>
 </form>
 </div>
-
+<!-- creating a spinner -->
 <ngx-spinner
   bdColor="rgba(0, 0, 0, 1)"
   template="<img src='https://media.giphy.com/media/o8igknyuKs6aY/giphy.gif' />"

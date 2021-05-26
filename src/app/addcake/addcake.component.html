@@ -1,6 +1,10 @@
+<!-- Html for creating add new cake form UI -->
 <div class="containers">
+    <!-- Creating a form -->
     <form action="">
+        <!-- Heading -->
     <h2>Add new cake</h2>
+    
     <div id="detail" class="mb-3">
         <label for="name">Name
         <input [(ngModel)] = "addcake.name"  type="text" class="form-control" placeholder="Enter Cake Name" name="name"  aria-describedby="addon-wrapping">
@@ -39,6 +43,7 @@
         <textarea [(ngModel)] = "addcake.description" type="text" class="form-control" placeholder="Enter Cake Description" name="description"  aria-describedby="addon-wrapping"></textarea>
     </label>
     </div>
+    <!-- for image preview -->
     <div id="image">
         <label for="image">Image
         <input (change) = "submit($event)" type="file">
@@ -47,6 +52,7 @@
     <div id="photo">
         <img [src] ="addcake.image" alt="" srcset="">
     </div>
+    <!-- creating a button -->
       <button (click) = "add()" id="add">Add Cake</button>
     </form>
     </div>

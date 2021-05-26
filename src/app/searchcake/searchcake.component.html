@@ -1,3 +1,6 @@
+<!-- For creating UI for searching cake -->
+
+<!-- filtering a data according to price -->
 <div class="input-group mb-3 mt-4" id="size">
     <input [(ngModel)] = "price.min" type="text" class="form-control" placeholder="Min Price" aria-label="min" name="min">
     <input [(ngModel)] = "price.max" type="text" class="form-control" placeholder="Max Price" aria-label="max" name="max">
@@ -6,6 +9,7 @@
 
 <div id="cakes">
     <div class="cakes">
+      <!-- creating a cake cards -->
     <app-cakecard [cakes] = "cakeitem" *ngFor = "let cakeitem of searchcakes">
 
     </app-cakecard>

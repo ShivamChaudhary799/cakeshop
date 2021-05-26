@@ -1,3 +1,4 @@
+/* For styling heading */
 h2{
     text-align: center;
     padding-top: 1vh;
@@ -5,20 +6,21 @@ h2{
     color: brown;
     background-color: burlywood;
 }
+/* For styling input box */
 input {
     margin-left: 15vw;
 }
+/* For styling button */
 button {
     margin-left: 22vw;
     margin-bottom: 3vh;
-    /* background-color: rgba(0, 0, 255, 0.596); */
     background-color: burlywood;
     border-radius: 5px;
     border: 2px solid #000000;
 }
+/* For styling form */
 form{
     position: relative;
-    /* background-color: rgba(255, 192, 203, 0.678); */
     background-color: rgba(188, 143, 143, 0.561);
     width: 50vw;
     left: 30%;

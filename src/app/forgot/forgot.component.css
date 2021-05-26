@@ -1,3 +1,9 @@
+/* for styling page */
+.containers{
+    min-width: 100vw;
+    min-height: 100vh;
+}
+/* For styling heading */
 h2{
     text-align: center;
     padding-top: 1vh;
@@ -5,10 +11,7 @@ h2{
     color: brown;
     background-color: burlywood;
 }
-.containers{
-    min-width: 100vw;
-    min-height: 100vh;
-}
+/* for styling form */
 form{
     position: relative;
     background-color: rgba(188, 143, 143, 0.561);
@@ -18,10 +21,12 @@ form{
     border-radius: 5px;
     border: 2px solid #000000;
 }
+/* for styling input boxes */
 input{
     width: 20vw;
     margin-left: 5vw;
 }
+/* for styling button */
 #submit{
     margin-left: 12vw;
     margin-bottom: 5vh;

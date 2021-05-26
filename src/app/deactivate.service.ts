@@ -10,6 +10,9 @@ export interface CanComponentDeactivate {
 })
 
 export class DeactivateService implements CanDeactivate<CanComponentDeactivate>{
+
+  // Deactivate function
+  
   canDeactivate(component: CanComponentDeactivate) {
     return component.canDeactivate();
   }

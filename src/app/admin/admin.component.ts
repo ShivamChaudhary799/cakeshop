@@ -16,21 +16,24 @@ cakeids:any = {};
     private route: RouterService,
     private router:ActivatedRoute,
     private rout:Router) { 
+
+      // for getting all cake through API
+
     var api = "https://apifromashu.herokuapp.com/api/allcakes";
     this.client.get(api).subscribe((response: any) => {
       console.log("response from admin", response);
-      // this.toast.success("Record removed!!!");
       this.data = response.data;
     },
     (error) => {
       console.log(error);
     })
   }
+  
+  // Function for editing cakes data
 
   edit(cakeid:any){
     console.log(cakeid);
     this.rout.navigate(['/admin/edit',cakeid])
-    
   }
   
   ngOnInit(): void {
